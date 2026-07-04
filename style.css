@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Animated background */
+  background: linear-gradient(-45deg, #ff6b6b, #4ecdc4, #1a1a2e, #ffcc70);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container {
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 350px;
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+#output {
+  margin-top: 20px;
+  color: white;
+}
